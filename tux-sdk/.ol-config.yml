@@ -1,0 +1,11 @@
+ol:
+  config:
+    apiPackage: com.tux_sdk.openlegacy.entities
+    apiSourceFolder: src/main/java
+    backendSolution: tuxedo
+    designtimeContext: default
+    frontendSolution: java
+    generateTest: false
+    provider: openlegacy-tuxedo
+    sourceFetcher: sourceFetcher
+    webPackage: com.tux_sdk.openlegacy.web

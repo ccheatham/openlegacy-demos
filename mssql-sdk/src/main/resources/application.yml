@@ -1,0 +1,19 @@
+ol:
+  # Openlegacy Common Properties (OLCommonProperties) #
+  common:
+    right-to-left: false
+    project:
+      mssqlSdk:
+        backend-solution: JDBC
+        live-session: true
+        trail-path: /trails/mssql-sdk.trail
+        cache:
+          enabled: true
+  database:
+    project:
+      mssqlSdk:
+        url: jdbc:sqlserver://localhost:1433;databaseName=openlegacy
+        driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
+        username: sa
+        password: '{cipher}4f4da04d7c86b81fae06b36e497fc001c3af3ed11c4bf32b253cc5beaab4d02c'
+

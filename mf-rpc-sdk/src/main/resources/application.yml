@@ -1,0 +1,22 @@
+ol:
+  # Openlegacy Common Properties (OLCommonProperties) #
+  common:
+    right-to-left: false
+    project:
+      mfRpcSdk:
+        backend-solution: MF_RPC
+        live-session: true
+        trail-path: /trails/mf-rpc-sdk.trail
+        cache:
+          enabled: true
+  # Openlegacy CICS Properties (CicsProperties) #
+  cics:
+    project:
+      mfRpcSdk:
+        base-url: http://192.86.32.142
+        port: 12345
+        uri-map: oldist3
+        code-page: CP037
+        user: 
+        password: 
+

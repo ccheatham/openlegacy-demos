@@ -1,0 +1,12 @@
+ol:
+  config:
+    apiPackage: com.wsdl_sdk.openlegacy
+    apiSourceFolder: src/main/java
+    backendSolution: web-services
+    designtimeContext: default
+    frontendSolution: java
+    generateTest: false
+    legacyFilename: http://www.thomas-bayer.com/axis2/services/BLZService?wsdl
+    provider: openlegacy-ws-rpc
+    sourceFetcher: sourceFetcher
+    webPackage: com.wsdl_sdk.openlegacy.web

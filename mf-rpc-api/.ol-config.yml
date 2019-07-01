@@ -1,0 +1,11 @@
+ol:
+  config:
+    apiPackage: com.mf_rpc_api.openlegacy
+    apiSourceFolder: src/main/java
+    backendSolution: orchestration
+    designtimeContext: default
+    frontendSolution: orchestration-rest
+    referredProjects:
+    - mf-rpc-sdk
+    sourceFetcher: sourceFetcher
+    webPackage: com.mf_rpc_api.openlegacy.web

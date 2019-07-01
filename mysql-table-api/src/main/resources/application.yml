@@ -1,0 +1,53 @@
+# Logging #
+#logging:
+#  level:
+#    org:
+#      openlegacy: debug
+
+# Security #
+security:
+  # Spring security OAuth2 configuration #
+  oauth2:
+    resource:
+      filter-order: 3
+
+# Springfox #
+springfox:
+  documentation:
+    swagger:
+      v2:
+        path: /swagger/swagger.json
+
+# Openlegacy #
+ol:
+  # Openlegacy Common Properties (OLCommonProperties) #
+  common:
+    user-properties-folder-name: mysql-table-api
+    cache:
+      enabled: true
+
+---
+
+# mysqlTableSdk
+ol:
+  # Openlegacy Common Properties (OLCommonProperties) #
+  common:
+    right-to-left: false
+    project:
+      mysqlTableSdk:
+        backend-solution: JDBC
+        live-session: true
+        trail-path: /trails/mysql-table-sdk.trail
+        cache:
+          enabled: true
+  database:
+    project:
+      mysqlTableSdk:
+        url: jdbc:mysql://localhost:3306/openlegacy
+        driverClassName: com.mysql.jdbc.Driver
+        username: root
+        password: '{cipher}574f2e5ccd772c6436e1f93bd05a5b1f03ac5e201a455eda9bcd19199b2cd415'
+
+
+
+

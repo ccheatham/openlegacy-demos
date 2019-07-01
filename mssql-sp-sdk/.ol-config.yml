@@ -1,0 +1,14 @@
+ol:
+  config:
+    apiPackage: com.mssql_sp_sdk.openlegacy
+    apiSourceFolder: src/main/java
+    backendSolution: stored-procedures
+    dbDialect: org.hibernate.dialect.SQLServerDialect
+    designtimeContext: default
+    frontendSolution: java
+    hostName: jdbc:sqlserver://localhost:1433;databaseName=openlegacy
+    password: password1**
+    provider: openlegacy-db-stored-proc
+    sourceFetcher: jdbcSourceFetcher
+    userName: sa
+    webPackage: com.mssql_sp_sdk.openlegacy.web

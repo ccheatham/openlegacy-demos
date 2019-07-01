@@ -1,0 +1,11 @@
+ol:
+  config:
+    apiPackage: com.wsld_api.openlegacy
+    apiSourceFolder: src/main/java
+    backendSolution: orchestration
+    designtimeContext: default
+    frontendSolution: orchestration-rest
+    referredProjects:
+    - wsdl-sdk
+    sourceFetcher: sourceFetcher
+    webPackage: com.wsld_api.openlegacy.web

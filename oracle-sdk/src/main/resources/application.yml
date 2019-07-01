@@ -1,0 +1,19 @@
+ol:
+  # Openlegacy Common Properties (OLCommonProperties) #
+  common:
+    right-to-left: false
+    project:
+      oracleSdk:
+        backend-solution: JDBC
+        live-session: true
+        trail-path: /trails/oracle-sdk.trail
+        cache:
+          enabled: true
+  database:
+    project:
+      oracleSdk:
+        url: jdbc:oracle:thin:@//localhost:1521/HR
+        driverClassName: oracle.jdbc.driver.OracleDriver
+        username: system
+        password: '{cipher}7813af75877151ffc674d57ac2071812894071db95f62c454676530323f6f002'
+

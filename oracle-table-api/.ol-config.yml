@@ -1,0 +1,12 @@
+ol:
+  config:
+    apiPackage: com.oracle_table_api.openlegacy
+    apiSourceFolder: src/main/java
+    backendSolution: orchestration
+    designtimeContext: default
+    frontendSolution: orchestration-rest
+    generateImpl: true
+    referredProjects:
+    - oracle-table-sdk
+    sourceFetcher: sourceFetcher
+    webPackage: com.oracle_table_api.openlegacy.web

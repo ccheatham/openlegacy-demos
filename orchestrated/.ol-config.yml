@@ -1,0 +1,13 @@
+ol:
+  config:
+    apiPackage: com.orchestrated.openlegacy
+    apiSourceFolder: src/main/java
+    backendSolution: orchestration
+    designtimeContext: default
+    frontendSolution: orchestration-rest
+    referredProjects:
+    - wsdl-sdk
+    - mf-rpc-sdk
+    - as400-rpc-sdk
+    sourceFetcher: sourceFetcher
+    webPackage: com.orchestrated.openlegacy.web

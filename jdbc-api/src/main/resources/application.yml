@@ -1,0 +1,53 @@
+# Logging #
+#logging:
+#  level:
+#    org:
+#      openlegacy: debug
+
+# Security #
+security:
+  # Spring security OAuth2 configuration #
+  oauth2:
+    resource:
+      filter-order: 3
+
+# Springfox #
+springfox:
+  documentation:
+    swagger:
+      v2:
+        path: /swagger/swagger.json
+
+# Openlegacy #
+ol:
+  # Openlegacy Common Properties (OLCommonProperties) #
+  common:
+    user-properties-folder-name: jdbc-api
+    cache:
+      enabled: true
+
+---
+
+# oracleCustomerSdk
+ol:
+  # Openlegacy Common Properties (OLCommonProperties) #
+  common:
+    right-to-left: false
+    project:
+      oracleCustomerSdk:
+        backend-solution: JDBC
+        live-session: true
+        trail-path: /trails/oracle-customer-sdk.trail
+        cache:
+          enabled: true
+  database:
+    project:
+      oracleCustomerSdk:
+        url: jdbc:oracle:thin:@//localhost:1521/xe
+        driverClassName: oracle.jdbc.driver.OracleDriver
+        username: system
+        password: '{cipher}dfe302bb99828c02f371034b26210a12b976916a2050376f36f734ae2fe4f2d1'
+
+
+
+

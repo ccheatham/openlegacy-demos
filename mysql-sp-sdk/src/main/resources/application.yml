@@ -1,0 +1,19 @@
+ol:
+  # Openlegacy Common Properties (OLCommonProperties) #
+  common:
+    right-to-left: false
+    project:
+      mysqlSpSdk:
+        backend-solution: STORED_PROCEDURES
+        live-session: true
+        trail-path: /trails/mysql-sp-sdk.trail
+        cache:
+          enabled: true
+  database:
+    project:
+      mysqlSpSdk:
+        url: jdbc:mysql://localhost:3306/openlegacy
+        driverClassName: com.mysql.jdbc.Driver
+        username: root
+        password: '{cipher}522649148478ca6ea8ae40802665ee81289d63643fe2f4e48a702050ebc8c521'
+

@@ -1,0 +1,12 @@
+ol:
+  config:
+    apiPackage: com.mysql_sp_sdk.openlegacy
+    apiSourceFolder: src/main/java
+    backendSolution: stored-procedures
+    dbDialect: org.hibernate.dialect.MySQL5Dialect
+    designtimeContext: default
+    frontendSolution: java
+    provider: openlegacy-db-stored-proc
+    repositoryPackage: com.mysql_sp_sdk.openlegacy.repositories
+    sourceFetcher: jdbcSourceFetcher
+    webPackage: com.mysql_sp_sdk.openlegacy.web

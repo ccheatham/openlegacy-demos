@@ -1,0 +1,1 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=com.oracle_customer_sdk.openlegacy.OracleCustomerSdkAutoConfiguration

@@ -1,0 +1,105 @@
+# Logging #
+#logging:
+#  level:
+#    org:
+#      openlegacy: debug
+
+# Security #
+security:
+  # Spring security OAuth2 configuration #
+  oauth2:
+    resource:
+      filter-order: 3
+
+# Springfox #
+springfox:
+  documentation:
+    swagger:
+      v2:
+        path: /swagger/swagger.json
+
+# Openlegacy #
+ol:
+  # Openlegacy Common Properties (OLCommonProperties) #
+  common:
+    user-properties-folder-name: orchestrated
+    cache:
+      enabled: true
+
+---
+
+# wsdlSdk
+ol:
+  # Openlegacy Common Properties (OLCommonProperties) #
+  common:
+    right-to-left: false
+    project:
+      wsdlSdk:
+        backend-solution: WEB_SERVICES
+        live-session: true
+        trail-path: /trails/wsdl-sdk.trail
+        cache:
+          enabled: true
+  url:
+    project:
+      wsdlSdk:
+        baseUrl: http://www.thomas-bayer.com
+        username: 
+        password: 
+
+
+
+
+---
+
+# as400RpcSdk
+ol:
+  # Openlegacy Common Properties (OLCommonProperties) #
+  common:
+    right-to-left: false
+    project:
+      as400RpcSdk:
+        backend-solution: AS400_RPC
+        live-session: true
+        trail-path: /trails/as400-rpc-sdk.trail
+        cache:
+          enabled: true
+  jt400:
+    project:
+      as400RpcSdk:
+        host: as400.openlegacy.com
+        user: OPENLEGA1
+        password: '{cipher}f742826770e1a4a18c4b1c8fba167acc97f1bcba3c1e1185609fcd8002d2aa8a'
+        code-page: 37
+
+
+
+
+---
+
+# mfRpcSdk
+ol:
+  # Openlegacy Common Properties (OLCommonProperties) #
+  common:
+    right-to-left: false
+    project:
+      mfRpcSdk:
+        backend-solution: MF_RPC
+        live-session: true
+        trail-path: /trails/mf-rpc-sdk.trail
+        cache:
+          enabled: true
+  # Openlegacy CICS Properties (CicsProperties) #
+  cics:
+    project:
+      mfRpcSdk:
+        base-url: http://192.86.32.142
+        port: 12345
+        uri-map: oldist3
+        code-page: CP037
+        user: 
+        password: 
+
+
+
+

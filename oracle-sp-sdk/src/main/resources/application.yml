@@ -1,0 +1,19 @@
+ol:
+  # Openlegacy Common Properties (OLCommonProperties) #
+  common:
+    right-to-left: false
+    project:
+      oracleSpSdk:
+        backend-solution: STORED_PROCEDURES
+        live-session: true
+        trail-path: /trails/oracle-sp-sdk.trail
+        cache:
+          enabled: true
+  database:
+    project:
+      oracleSpSdk:
+        url: jdbc:oracle:thin:@//localhost:1521/xe
+        driverClassName: oracle.jdbc.driver.OracleDriver
+        username: system
+        password: '{cipher}5f3b91e4d6133f64abfb17f32eab178e2287cc652abf3b531a389f2d63a0bec9'
+

@@ -1,0 +1,12 @@
+ol:
+  config:
+    apiPackage: com.jdbc_api.openlegacy
+    apiSourceFolder: src/main/java
+    backendSolution: orchestration
+    designtimeContext: default
+    frontendSolution: orchestration-rest
+    generateImpl: true
+    referredProjects:
+    - oracle-customer-sdk
+    sourceFetcher: sourceFetcher
+    webPackage: com.jdbc_api.openlegacy.web

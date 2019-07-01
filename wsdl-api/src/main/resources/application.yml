@@ -1,0 +1,52 @@
+# Logging #
+#logging:
+#  level:
+#    org:
+#      openlegacy: debug
+
+# Security #
+security:
+  # Spring security OAuth2 configuration #
+  oauth2:
+    resource:
+      filter-order: 3
+
+# Springfox #
+springfox:
+  documentation:
+    swagger:
+      v2:
+        path: /swagger/swagger.json
+
+# Openlegacy #
+ol:
+  # Openlegacy Common Properties (OLCommonProperties) #
+  common:
+    user-properties-folder-name: wsdl-api
+    cache:
+      enabled: true
+
+---
+
+# wsdlSdk
+ol:
+  # Openlegacy Common Properties (OLCommonProperties) #
+  common:
+    right-to-left: false
+    project:
+      wsdlSdk:
+        backend-solution: WEB_SERVICES
+        live-session: true
+        trail-path: /trails/wsdl-sdk.trail
+        cache:
+          enabled: true
+  url:
+    project:
+      wsdlSdk:
+        baseUrl: http://www.thomas-bayer.com
+        username: 
+        password: 
+
+
+
+

@@ -1,0 +1,6 @@
+.metadata
+target
+*.flattened-pom.xml
+*.project
+*.settings
+openlegacy.management.license

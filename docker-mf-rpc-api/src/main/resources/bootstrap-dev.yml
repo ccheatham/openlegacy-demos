@@ -1,0 +1,16 @@
+# Default bootstrap configuration to work in development environment
+# Disables eureka client and config client
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    enabled: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+
+spring:
+  cloud:
+    config:
+      enabled: false
+      discovery:
+        enabled: false

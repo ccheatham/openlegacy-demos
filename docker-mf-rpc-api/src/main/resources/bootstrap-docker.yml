@@ -1,0 +1,5 @@
+# Default bootstrap configuration to work in docker environment
+eureka:
+  client:
+    service-url:
+      defaultZone: http://openlegacy-service-discovery:8761/eureka

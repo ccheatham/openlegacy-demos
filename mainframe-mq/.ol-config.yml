@@ -1,0 +1,10 @@
+ol:
+  config:
+    apiPackage: com.mainframe_mq.openlegacy
+    apiSourceFolder: src/main/java
+    backendSolution: mq
+    designtimeContext: default
+    frontendSolution: java
+    provider: openlegacy-mf-mq
+    sourceFetcher: sourceFetcher
+    webPackage: com.mainframe_mq.openlegacy.web

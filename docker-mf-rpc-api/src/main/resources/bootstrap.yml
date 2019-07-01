@@ -1,0 +1,17 @@
+# Default bootstrap configuration
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+spring:
+  application:
+    name: docker-mf-rpc-api
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: openlegacy-config-server
+      retry:
+        max-attempts: 100
+        max-interval: 30000
+      fail-fast: true

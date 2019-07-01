@@ -1,0 +1,12 @@
+ol:
+  config:
+    apiPackage: com.mssql_sdk.openlegacy
+    apiSourceFolder: src/main/java
+    backendSolution: jdbc
+    dbDialect: org.hibernate.dialect.SQLServerDialect
+    designtimeContext: default
+    frontendSolution: java
+    provider: ''
+    repositoryPackage: com.mssql_sdk.openlegacy.repositories
+    sourceFetcher: jdbcSourceFetcher
+    webPackage: com.mssql_sdk.openlegacy.web

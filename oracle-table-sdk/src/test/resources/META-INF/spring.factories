@@ -1,0 +1,2 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=ol.test.config.OLTestAutoConfiguration,\
+  com.oracle_table_sdk.openlegacy.OracleTableSdkAutoConfiguration

@@ -1,0 +1,11 @@
+ol:
+  config:
+    apiPackage: com.docker_mf_rpc_api.openlegacy
+    apiSourceFolder: src/main/java
+    backendSolution: orchestration
+    designtimeContext: default
+    frontendSolution: orchestration-rest
+    referredProjects:
+    - docker-mf-rpc-sdk
+    sourceFetcher: sourceFetcher
+    webPackage: com.docker_mf_rpc_api.openlegacy.web

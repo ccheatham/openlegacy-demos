@@ -1,0 +1,24 @@
+ol:
+  # Openlegacy Common Properties (OLCommonProperties) #
+  common:
+    right-to-left: false
+    project:
+      mainframeMq:
+        backend-solution: MQ
+        live-session: true
+        trail-path: /trails/mainframe-mq.trail
+        cache:
+          enabled: true
+  mq:
+    project:
+      mainframeMq:
+        hostname: 192.86.32.142
+        port: 1420
+        user: 
+        password: 
+        codepage: CP037
+        defaultQueueManager: CSQ7
+        channel: CSQ7.SVRCONN
+        sendQueue: DEV.INPUT.QUEUE
+        receiveQueue: DEV.OUT.QUEUE
+

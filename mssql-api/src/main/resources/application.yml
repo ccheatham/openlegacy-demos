@@ -1,0 +1,71 @@
+# Logging #
+#logging:
+#  level:
+#    org:
+#      openlegacy: debug
+
+# Security #
+security:
+  # Spring security OAuth2 configuration #
+  oauth2:
+    resource:
+      filter-order: 3
+
+# Springfox #
+springfox:
+  documentation:
+    swagger:
+      v2:
+        path: /swagger/swagger.json
+
+# Openlegacy #
+ol:
+  # Openlegacy Common Properties (OLCommonProperties) #
+  common:
+    user-properties-folder-name: mssql-api
+    cache:
+      enabled: true
+
+---
+
+# mssqlSdk
+ol:
+  # Openlegacy Common Properties (OLCommonProperties) #
+  common:
+    right-to-left: false
+    project:
+      mssqlSdk:
+        backend-solution: JDBC
+        live-session: true
+        trail-path: /trails/mssql-sdk.trail
+        cache:
+          enabled: true
+  database:
+    project:
+      mssqlSdk:
+        url: jdbc:sqlserver://localhost:1433;databaseName=openlegacy
+        driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
+        username: sa
+        password: '{cipher}4f4da04d7c86b81fae06b36e497fc001c3af3ed11c4bf32b253cc5beaab4d02c'
+
+---
+
+# mssqlSpSdk
+ol:
+  # Openlegacy Common Properties (OLCommonProperties) #
+  common:
+    right-to-left: false
+    project:
+      mssqlSpSdk:
+        backend-solution: STORED_PROCEDURES
+        live-session: true
+        trail-path: /trails/mssql-sp-sdk.trail
+        cache:
+          enabled: true
+  database:
+    project:
+      mssqlSpSdk:
+        url: jdbc:sqlserver://localhost:1433;databaseName=openlegacy
+        driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
+        username: sa
+        password: '{cipher}7181ff2aa15ce60e50c028a9a7a41f48682e9d01f0f12f9b4c608ff478525df7'

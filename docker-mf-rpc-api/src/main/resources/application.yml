@@ -1,0 +1,65 @@
+# Logging #
+#logging:
+#  level:
+#    org:
+#      openlegacy: debug
+
+# Security #
+security:
+  oauth2:
+    resource:
+      user-info-uri: http://openlegacy-uaa/user
+      token-info-uri: http://openlegacy-uaa/oauth/token
+      prefer-token-info: false
+
+management:
+  context-path: /actuator
+  security:
+    enabled: false
+  health:
+    defaults:
+      enabled: false
+
+# Springfox #
+springfox:
+  documentation:
+    swagger:
+      v2:
+        path: /swagger/swagger.json
+
+# Openlegacy #
+ol:
+  # Openlegacy Common Properties (OLCommonProperties) #
+  common:
+    user-properties-folder-name: docker-mf-rpc-api
+    cache:
+      enabled: true
+
+---
+
+# dockerMfRpcSdk
+ol:
+  # Openlegacy Common Properties (OLCommonProperties) #
+  common:
+    right-to-left: false
+    project:
+      dockerMfRpcSdk:
+        backend-solution: MF_RPC
+        live-session: true
+        trail-path: /trails/docker-mf-rpc-sdk.trail
+        cache:
+          enabled: true
+  # Openlegacy CICS Properties (CicsProperties) #
+  cics:
+    project:
+      dockerMfRpcSdk:
+        base-url: http://192.86.32.142
+        port: 12345
+        uri-map: oldist3
+        code-page: CP037
+        user: 
+        password: 
+
+
+
+

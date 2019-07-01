@@ -1,0 +1,11 @@
+ol:
+  config:
+    apiPackage: com.oracle_sp_api.openlegacy
+    apiSourceFolder: src/main/java
+    backendSolution: orchestration
+    designtimeContext: default
+    frontendSolution: orchestration-rest
+    referredProjects:
+    - oracle-sp-sdk
+    sourceFetcher: sourceFetcher
+    webPackage: com.oracle_sp_api.openlegacy.web

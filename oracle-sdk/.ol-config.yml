@@ -1,0 +1,12 @@
+ol:
+  config:
+    apiPackage: com.oracle_sdk.openlegacy
+    apiSourceFolder: src/main/java
+    backendSolution: jdbc
+    dbDialect: org.hibernate.dialect.OracleDialect
+    designtimeContext: default
+    frontendSolution: java
+    provider: ''
+    repositoryPackage: com.oracle_sdk.openlegacy.repositories
+    sourceFetcher: jdbcSourceFetcher
+    webPackage: com.oracle_sdk.openlegacy.web

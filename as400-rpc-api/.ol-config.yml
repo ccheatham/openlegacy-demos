@@ -1,0 +1,11 @@
+ol:
+  config:
+    apiPackage: com.as400_rpc_api.openlegacy
+    apiSourceFolder: src/main/java
+    backendSolution: orchestration
+    designtimeContext: default
+    frontendSolution: orchestration-rest
+    referredProjects:
+    - as400-rpc-sdk
+    sourceFetcher: sourceFetcher
+    webPackage: com.as400_rpc_api.openlegacy.web

@@ -1,0 +1,14 @@
+ol:
+  config:
+    apiPackage: com.oracle_sp_sdk.openlegacy
+    apiSourceFolder: src/main/java
+    backendSolution: stored-procedures
+    dbDialect: org.hibernate.dialect.OracleDialect
+    designtimeContext: default
+    frontendSolution: java
+    hostName: jdbc:oracle:thin:@//localhost:1521/xe
+    password: oracle
+    provider: openlegacy-db-stored-proc
+    sourceFetcher: jdbcSourceFetcher
+    userName: system
+    webPackage: com.oracle_sp_sdk.openlegacy.web

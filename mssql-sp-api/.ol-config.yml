@@ -1,0 +1,11 @@
+ol:
+  config:
+    apiPackage: com.mssql_sp_api.openlegacy
+    apiSourceFolder: src/main/java
+    backendSolution: orchestration
+    designtimeContext: default
+    frontendSolution: orchestration-rest
+    referredProjects:
+    - mssql-sp-sdk
+    sourceFetcher: sourceFetcher
+    webPackage: com.mssql_sp_api.openlegacy.web

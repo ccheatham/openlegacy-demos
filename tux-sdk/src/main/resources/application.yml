@@ -1,0 +1,17 @@
+ol:
+  # Openlegacy Common Properties (OLCommonProperties) #
+  common:
+    right-to-left: false
+    project:
+      tuxSdk:
+        backend-solution: TUXEDO
+        live-session: true
+        trail-path: /trails/tux-sdk.trail
+        cache:
+          enabled: true
+  tuxedo:
+    project:
+      tuxSdk:
+        app-address: //tuxedo.openlegacy.org:8001
+        validate-fields-as-list: true
+

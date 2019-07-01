@@ -1,0 +1,7 @@
+# Default bootstrap configuration to work in PCF cloud environment
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    service-url:
+      defaultZone: https://openlegacy-service-discovery.cfapps.io/eureka/

@@ -1,0 +1,15 @@
+ol:
+  config:
+    apiPackage: com.as400_rpc_sdk.openlegacy
+    apiSourceFolder: src/main/java
+    backendSolution: as400-rpc
+    designtimeContext: default
+    frontendSolution: java
+    generateTest: false
+    hostName: as400.openlegacy.com
+    legacyFilename: ''
+    password: OPENLEGA
+    provider: openlegacy-jt400
+    sourceFetcher: sourceFetcher
+    userName: OPENLEGA1
+    webPackage: com.as400_rpc_sdk.openlegacy.web

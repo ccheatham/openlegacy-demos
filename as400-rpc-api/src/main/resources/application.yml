@@ -1,0 +1,53 @@
+# Logging #
+#logging:
+#  level:
+#    org:
+#      openlegacy: debug
+
+# Security #
+security:
+  # Spring security OAuth2 configuration #
+  oauth2:
+    resource:
+      filter-order: 3
+
+# Springfox #
+springfox:
+  documentation:
+    swagger:
+      v2:
+        path: /swagger/swagger.json
+
+# Openlegacy #
+ol:
+  # Openlegacy Common Properties (OLCommonProperties) #
+  common:
+    user-properties-folder-name: as400-rpc-api
+    cache:
+      enabled: true
+
+---
+
+# as400RpcSdk
+ol:
+  # Openlegacy Common Properties (OLCommonProperties) #
+  common:
+    right-to-left: false
+    project:
+      as400RpcSdk:
+        backend-solution: AS400_RPC
+        live-session: true
+        trail-path: /trails/as400-rpc-sdk.trail
+        cache:
+          enabled: true
+  jt400:
+    project:
+      as400RpcSdk:
+        host: as400.openlegacy.com
+        user: OPENLEGA1
+        password: '{cipher}f742826770e1a4a18c4b1c8fba167acc97f1bcba3c1e1185609fcd8002d2aa8a'
+        code-page: 37
+
+
+
+

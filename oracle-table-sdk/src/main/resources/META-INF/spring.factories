@@ -1,0 +1,1 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=com.oracle_table_sdk.openlegacy.OracleTableSdkAutoConfiguration

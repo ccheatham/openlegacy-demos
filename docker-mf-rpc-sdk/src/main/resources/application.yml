@@ -1,0 +1,22 @@
+ol:
+  # Openlegacy Common Properties (OLCommonProperties) #
+  common:
+    right-to-left: false
+    project:
+      dockerMfRpcSdk:
+        backend-solution: MF_RPC
+        live-session: true
+        trail-path: /trails/docker-mf-rpc-sdk.trail
+        cache:
+          enabled: true
+  # Openlegacy CICS Properties (CicsProperties) #
+  cics:
+    project:
+      dockerMfRpcSdk:
+        base-url: http://192.86.32.142
+        port: 23
+        uri-map: oldist3
+        code-page: CP037
+        user: 
+        password: 
+

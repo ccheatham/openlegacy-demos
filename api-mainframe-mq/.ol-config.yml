@@ -1,0 +1,11 @@
+ol:
+  config:
+    apiPackage: com.api_mainframe_mq.openlegacy
+    apiSourceFolder: src/main/java
+    backendSolution: orchestration
+    designtimeContext: default
+    frontendSolution: orchestration-rest
+    referredProjects:
+    - mainframe-mq
+    sourceFetcher: sourceFetcher
+    webPackage: com.api_mainframe_mq.openlegacy.web

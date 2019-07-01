@@ -1,0 +1,12 @@
+ol:
+  config:
+    apiPackage: com.mysql_table_sdk.openlegacy
+    apiSourceFolder: src/main/java
+    backendSolution: jdbc
+    dbDialect: org.hibernate.dialect.MySQL5Dialect
+    designtimeContext: default
+    frontendSolution: java
+    provider: ''
+    repositoryPackage: com.mysql_table_sdk.openlegacy.repositories
+    sourceFetcher: jdbcSourceFetcher
+    webPackage: com.mysql_table_sdk.openlegacy.web
