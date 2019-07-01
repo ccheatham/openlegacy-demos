@@ -1,7 +1,7 @@
 package com.oracle_table_api.openlegacy.services.controllers;
 
 import java.util.List;
-import java.util.Optional;
+import java.util.Collection;
 
 import javax.inject.Inject;
 import org.springframework.http.HttpStatus;
@@ -91,10 +91,8 @@ public class OracleTableApiController {
     }
     
     @PostMapping(path = "/name/{name}")
-    @ApiOperation(value = "Find Customers by Name", response = ResponseEntity.class, authorizations = { @Authorization(value = "oauth2", scopes = { @AuthorizationScope(scope = "test", description = "Test") }) })
-    public ResponseEntity<?> findAllByName(@PathVariable String name) throws Exception {
-        Optional<Customer> customers = customerRepository.findByName(name);
-        return customers.map(response -> ResponseEntity.ok().body(response))
-                .orElse(new ResponseEntity<>(HttpStatus.NOT_FOUND));
+    @ApiOperation(value = "Find Customers Similar to Name", response = ResponseEntity.class, authorizations = { @Authorization(value = "oauth2", scopes = { @AuthorizationScope(scope = "test", description = "Test") }) })
+    public Collection<Customer> findAllByName(@PathVariable String name) throws Exception {
+        return customerRepository.findByNameContaining(name);
     }
 }

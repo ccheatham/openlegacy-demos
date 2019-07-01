@@ -1,7 +1,7 @@
 package com.oracle_table_api.openlegacy.services;
 
 import java.util.List;
-import java.util.Optional;
+import java.util.Collection;
 import org.openlegacy.core.annotations.OpenlegacyDesigntime;
 import org.openlegacy.core.annotations.services.Service;
 import org.springframework.data.domain.Page;
@@ -28,7 +28,7 @@ public interface OracleTableApiService {
     @Getter
     @Setter
     public static class FindAllByNameOut {
-        private Optional<Customer> records;
+        private Collection<Customer> records;
     }
     
     public FindAllPageableOut findAllPageable(FindAllPageableIn findAllPageableIn) throws Exception;
